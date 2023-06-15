@@ -1,0 +1,47 @@
+body {
+  background-color: #000000;
+  color: #04f71b;
+  font-family: monospace;
+  overflow: hidden;
+}
+.main {
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  color: #04f71b;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  width: 100px;
+  margin: auto;
+  outline: none;
+  letter-spacing: 4px;
+}
+label {
+  font-size: 18px;
+}
+span {
+  font-size: 18px;
+  margin: auto 10px;
+}
+
+.videoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ReactPlayer {
+  margin: auto;
+}
