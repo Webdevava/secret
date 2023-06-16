@@ -13,6 +13,7 @@ const VideoPage = () => {
           controls
           width="80vw"
           height="80vh"
+          fullscreen  
         />
       </div>
     </div>
