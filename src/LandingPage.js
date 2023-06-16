@@ -3,7 +3,6 @@ import VideoPage from "./VideoPage";
 
 const LandingPage = () => {
   const [password, setPassword] = useState("");
-  const [isValidPassword, setIsValidPassword] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const [message, setMessage] = useState("");
   const [showVideoPage, setShowVideoPage] = useState(false);
@@ -17,7 +16,6 @@ const LandingPage = () => {
     event.preventDefault();
 
     if (password === "password") {
-      setIsValidPassword(true);
       setMessage("Access Granted");
       setTimeout(() => {
         setShowVideoPage(true);
@@ -52,17 +50,7 @@ const LandingPage = () => {
   return (
     <div className="main">
       {showMessage && (
-        <p
-          style={{
-            color: message === "Access Denied" ? "red" : "#04f71b",
-            border:
-              message === "Access Denied"
-                ? "1px solid red"
-                : "1px solid #04f71b",
-            padding: "20px",
-            fontSize: "18px",
-          }}
-        >
+        <p className={message === "Access Denied" ? "error" : "success"}>
           {message}
         </p>
       )}
