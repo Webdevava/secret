@@ -57,7 +57,8 @@ span {
 
 .textContainer {
   align-self: flex-start;
-  margin: 0 0 20px;
+  
+  margin-left:50px;
   font-size: 18px;
 }
 
