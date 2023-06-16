@@ -53,8 +53,6 @@ span {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width:fit-content;
-  padding:3%;
 }
 
 .textContainer {
