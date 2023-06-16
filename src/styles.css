@@ -53,12 +53,11 @@ span {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width:fit-content;
 }
 
 .textContainer {
   align-self: flex-start;
-  
-  margin-left:50px;
   font-size: 18px;
 }
 
